@@ -1,0 +1,19 @@
+{
+  "name": "wbdv-sp21-01-salehi-s-server-node",
+  "version": "1.0.0",
+  "description": "Sina Salehi - CS5610 (Web Development) - Professor Annunziato - Node Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salehi-s/wbdv-sp21-01-salehi-s-server-node.git"
+  },
+  "author": "Sina Salehi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salehi-s/wbdv-sp21-01-salehi-s-server-node/issues"
+  },
+  "homepage": "https://github.com/salehi-s/wbdv-sp21-01-salehi-s-server-node#readme"
+}
