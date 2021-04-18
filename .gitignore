@@ -108,3 +108,10 @@ dist
 *.idea
 /.idea
 .idea/
+.idea/*
+
+# Database data Directory
+data
+data/
+/data
+data/*

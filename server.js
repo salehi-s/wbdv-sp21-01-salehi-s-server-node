@@ -1,6 +1,11 @@
 const express = require("express")
 const app = express()
 
+// Import Mongoose NodeJS Library
+const mongoose = require("mongoose")
+mongoose.connect("mongodb://localhost:27017/whiteboard", {useNewUrlParser : true,
+                                                                     useUnifiedTopology : true})
+
 // Configure CORS
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*")

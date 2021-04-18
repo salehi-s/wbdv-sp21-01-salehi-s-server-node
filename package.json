@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/salehi-s/wbdv-sp21-01-salehi-s-server-node#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.12.4"
   }
 }
