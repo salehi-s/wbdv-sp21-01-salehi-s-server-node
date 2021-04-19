@@ -1,5 +1,6 @@
 const questions = require("./questions.json")
 const questionsModel = require("../../db/questions/questions-model")
+const questionsDao = require("../../db/questions/questions-dao")
 
 const createQuestion = () => {
 
@@ -13,7 +14,10 @@ const findAllQuestions = () => {
     // Previous Implementation
     // return questions
 
-    return questionsModel.find()
+    // Non-DAO Implementation
+    // return questionsModel.find()
+
+    return questionsDao.findAllQuestions()
 }
 
 const findQuestionsForQuiz = (quizId) => {
@@ -22,7 +26,10 @@ const findQuestionsForQuiz = (quizId) => {
     //     return (question.quizId === quizId)
     // })
 
-    return questionsModel.find({quizId: quizId})
+    // Non-DAO Implementation
+    // return questionsModel.find({quizId: quizId})
+
+    return questionsDao.findQuestionsForQuiz(quizId)
 }
 
 const findQuestionById = (questionId) => {
@@ -31,7 +38,10 @@ const findQuestionById = (questionId) => {
     //     return (question._id === questionId)
     // })
 
-    return questionsModel.findById(questionId)
+    // Non-DAO Implementation
+    // return questionsModel.findById(questionId)
+
+    return questionsDao.findQuestionById(questionId)
 }
 
 const updateQuestion = () => {

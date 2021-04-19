@@ -1,5 +1,6 @@
 const quizzes = require("./quizzes.json")
 const quizzesModel = require("../../db/quizzes/quizzes-model")
+const quizzesDao = require("../../db/quizzes/quizzes-dao")
 
 const createQuiz = () => {
 
@@ -9,7 +10,10 @@ const findAllQuizzes = () => {
     // Previous Implementation
     // return quizzes
 
-    return quizzesModel.find()
+    // Non-DAO Implementation
+    // return quizzesModel.find()
+
+    return quizzesDao.findAllQuizzes()
 }
 
 const findQuizById = (qid) => {
@@ -18,9 +22,12 @@ const findQuizById = (qid) => {
     //     return (quiz._id === qid)
     // })
 
-    return quizzesModel.findById(qid)
-        .populate("questions")
-        .exec()
+    // Non-DAO Implementation
+    // return quizzesModel.findById(qid)
+    //     .populate("questions")
+    //     .exec()
+
+    return quizzesDao.findQuizById(qid)
 }
 
 const updateQuiz = () => {
