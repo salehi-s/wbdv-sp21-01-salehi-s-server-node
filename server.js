@@ -1,10 +1,15 @@
+const uri = process.env.MONGODB_URI
+
+// Local Implementation
+// const uri = "mongodb://localhost:27017/whiteboard"
+
 const express = require("express")
 const app = express()
 
 // Import Mongoose NodeJS Library
 const mongoose = require("mongoose")
-mongoose.connect("mongodb://localhost:27017/whiteboard", {useNewUrlParser : true,
-                                                                     useUnifiedTopology : true})
+mongoose.connect(uri,
+                 {useNewUrlParser : true, useUnifiedTopology : true})
 
 // Configure Body Parser
 var bodyParser = require("body-parser")
