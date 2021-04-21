@@ -1,7 +1,8 @@
-// const uri = process.env.MONGODB_URI
+// Remote Implementation
+const uri = process.env.MONGODB_URI
 
 // Local Implementation
-const uri = "mongodb://localhost:27017/whiteboard"
+// const uri = "mongodb://localhost:27017/whiteboard"
 
 const express = require("express")
 const app = express()
