@@ -1,4 +1,4 @@
-const quizzesModel = require('./quizzes-model')
+const quizzesModel = require("../models/quizzes/quizzes-model")
 
 const findAllQuizzes = () => {
     return quizzesModel.find()

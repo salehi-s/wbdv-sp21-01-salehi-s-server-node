@@ -1,6 +1,6 @@
 const questions = require("./questions.json")
-const questionsModel = require("../../db/questions/questions-model")
-const questionsDao = require("../../db/questions/questions-dao")
+const questionsModel = require("../../models/questions/questions-model")
+const questionsDao = require("../../daos/questions-dao")
 
 const createQuestion = () => {
 

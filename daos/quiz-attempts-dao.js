@@ -1,4 +1,4 @@
-const quizAttemptsModel = require('./quiz-attempts-model')
+const quizAttemptsModel = require("../models/quiz-attempts/quiz-attempts-model")
 
 const scoreQuiz = (questions) => {
     let numberOfCorrectQuestions = 0

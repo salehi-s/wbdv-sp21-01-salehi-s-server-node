@@ -1,4 +1,4 @@
-const quizAttemptsDao = require("../db/quiz-attempts/quiz-attempts-dao")
+const quizAttemptsDao = require("../daos/quiz-attempts-dao")
 
 module.exports = (app) => {
 

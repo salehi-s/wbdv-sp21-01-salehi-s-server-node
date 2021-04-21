@@ -1,6 +1,6 @@
 const quizzes = require("./quizzes.json")
-const quizzesModel = require("../../db/quizzes/quizzes-model")
-const quizzesDao = require("../../db/quizzes/quizzes-dao")
+const quizzesModel = require("../../models/quizzes/quizzes-model")
+const quizzesDao = require("../../daos/quizzes-dao")
 
 const createQuiz = () => {
 
