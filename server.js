@@ -9,8 +9,7 @@ const app = express()
 
 // Import Mongoose NodeJS Library
 const mongoose = require("mongoose")
-mongoose.connect(uri,
-                 {useNewUrlParser : true, useUnifiedTopology : true})
+mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true})
 
 // Configure Body Parser
 var bodyParser = require("body-parser")
@@ -29,4 +28,4 @@ require("./controllers/quizzes-controller")(app)
 require("./controllers/questions-controller")(app)
 require('./controllers/quiz-attempts-controller')(app)
 
-app.listen(3000)
+app.listen(process.env.PORT || 3001)
